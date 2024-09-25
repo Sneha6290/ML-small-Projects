@@ -29,8 +29,8 @@ train_accuracy = accuracy_score(Y_train, classifier.predict(X_train))
 test_accuracy = accuracy_score(Y_test, classifier.predict(X_test))
 print(f"Training Accuracy: {train_accuracy}")
 print(f"Testing Accuracy: {test_accuracy}")
-# Save the model and vectorizer
+# Save the model and standarize data
 joblib.dump(classifier, 'diabetes_dataset_classifier.joblib')
-joblib.dump(standarized_data, 'standarized_data.joblib')
-
+#joblib.dump(standarized_data, 'standarized_data.joblib')
+joblib.dump(scaler, 'scaler.joblib')
 print("Model and standarized data saved successfully.")
