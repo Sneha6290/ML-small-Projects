@@ -1,0 +1,12 @@
+# Core dependencies
+numpy>=1.21.0
+pandas>=1.3.0
+scikit-learn>=1.0.2
+joblib>=1.1.0
+
+# Visualization dependencies (used in training for evaluation)
+seaborn>=0.11.2
+matplotlib>=3.4.3
+
+# Optional: For logging to files (if needed)
+python-json-logger>=2.0.4
